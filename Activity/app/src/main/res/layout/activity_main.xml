@@ -22,10 +22,13 @@
         android:id="@+id/activity_main_et_length"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="@string/length_hint"
+        android:hintTextColor="#757575"
+        android:importantForAutofill="no"
         android:inputType="numberDecimal"
         android:lines="1"
         android:minHeight="48dp"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck,TextContrastCheck" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -36,13 +39,16 @@
         android:id="@+id/activity_main_et_width"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="@string/width_hint"
+        android:hintTextColor="#757575"
+        android:importantForAutofill="no"
         android:inputType="numberDecimal"
         android:lines="1"
         android:minHeight="48dp"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck,TextContrastCheck" />
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/height" />
 
@@ -50,10 +56,12 @@
         android:id="@+id/activity_main_et_height"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="@string/height_hint"
+        android:importantForAutofill="no"
         android:inputType="numberDecimal"
         android:lines="1"
         android:minHeight="48dp"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck,TextContrastCheck" />
 
     <Button
         android:id="@+id/activity_main_bt_calculate"

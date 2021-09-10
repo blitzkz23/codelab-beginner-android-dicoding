@@ -5,4 +5,7 @@
     <string name="height">Tinggi</string>
     <string name="calculate">Hitung</string>
     <string name="result">Hasil</string>
+    <string name="length_hint">Masukkan panjang...</string>
+    <string name="width_hint">Masukkan lebar...</string>
+    <string name="height_hint">Masukkan tinggi...</string>
 </resources>
