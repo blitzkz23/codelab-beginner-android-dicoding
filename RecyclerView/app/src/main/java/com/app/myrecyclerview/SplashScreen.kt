@@ -15,7 +15,13 @@ class SplashScreen : AppCompatActivity() {
 		val splashText: TextView = findViewById(R.id.splash_tv)
 
 		splashImage.alpha = 0f
+		splashText.alpha = 0f
 		splashImage.animate().setDuration(2000).alpha(1f).withEndAction {
+			val intent = Intent(this, MainActivity::class.java)
+			startActivity(intent)
+			overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
+		}
+		splashText.animate().setDuration(2000).alpha(1f).withEndAction {
 			val intent = Intent(this, MainActivity::class.java)
 			startActivity(intent)
 			overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
