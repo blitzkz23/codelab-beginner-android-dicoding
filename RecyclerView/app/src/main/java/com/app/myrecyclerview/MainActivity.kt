@@ -26,18 +26,28 @@ class MainActivity : AppCompatActivity() {
 		showRecyclerList()
 	}
 
+	/**
+	 * Just what the function name says
+	 */
 	private fun showSelectedHero(hero: Hero) {
 		Toast.makeText(this, "Kamu memilih " + hero.name, Toast.LENGTH_SHORT).show()
 	}
 
+	/**
+	 * This function is used to change the supportActionBar if there's available title argument.
+	 */
 	private fun setActionBarTitle(title: String) {
 		supportActionBar?.title = title
 	}
 
+	/**
+	 * This function is used to show the RecyclerView in List format.
+	 */
 	private fun showRecyclerList() {
 		rvHeroes.layoutManager = LinearLayoutManager(this)
 		val listHeroAdapter = ListHeroAdapter(list)
 		rvHeroes.adapter = listHeroAdapter
+
 
 		listHeroAdapter.setOnItemClickCallback(object : ListHeroAdapter.OnItemClickCallback {
 			override fun onItemClicked(data: Hero) {
@@ -46,6 +56,9 @@ class MainActivity : AppCompatActivity() {
 		})
 	}
 
+	/**
+	 * This function is used to show the RecyclerView in Grid format.
+	 */
 	private fun showRecyclerGrid() {
 		rvHeroes.layoutManager = GridLayoutManager(this, 2)
 		val gridHeroAdapter = GridHeroAdapter(list)
@@ -58,6 +71,9 @@ class MainActivity : AppCompatActivity() {
 		})
 	}
 
+	/**
+	 * This function is used to show the RecyclerView in CardView format.
+	 */
 	private fun showRecyclerCardView() {
 		rvHeroes.layoutManager = LinearLayoutManager(this)
 		val cardViewHeroAdapter = CardViewHeroAdapter(list)
