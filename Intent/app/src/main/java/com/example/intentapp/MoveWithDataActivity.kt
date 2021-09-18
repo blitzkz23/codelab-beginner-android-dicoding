@@ -19,7 +19,7 @@ class MoveWithDataActivity : AppCompatActivity() {
 
 		val tvDataReceived: TextView = findViewById(R.id.activity_move_tv_data_received)
 
-//		getExtra is used to get the data from key on the intent's const
+//		getExtra is used to get the data from key on the intent's const 
 		val name = intent.getStringExtra(EXTRA_NAME)
 		val age = intent.getIntExtra(EXTRA_AGE, 0)
 
