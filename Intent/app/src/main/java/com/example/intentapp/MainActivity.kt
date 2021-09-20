@@ -63,7 +63,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 				val person = Person(
 					"Naufal Aldy Pradana",
 					5,
-					"naufalaldyp@gmail,com",
+					"naufalaldyp@gmail.com",
 					"Semarang"
 				)
 
